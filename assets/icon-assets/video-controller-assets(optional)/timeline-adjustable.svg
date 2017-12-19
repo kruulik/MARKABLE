@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="530px" height="6px" viewBox="0 0 530 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>timeline-adjustable</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="video-recognition-challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="video-recognition-paused" transform="translate(-19.000000, -438.000000)" fill="#5BC4B4">
+            <g id="video-controller" transform="translate(19.000000, 438.000000)">
+                <g id="timeline">
+                    <rect id="timeline-adjustable" transform="translate(264.504847, 2.899964) scale(1, -1) translate(-264.504847, -2.899964) " x="0" y="0.606666424" width="529.009694" height="4.5865948" rx="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

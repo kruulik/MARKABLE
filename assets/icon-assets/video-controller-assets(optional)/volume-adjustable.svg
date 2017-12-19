@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="6px" viewBox="0 0 37 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>volume-adjustable</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="video-recognition-challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="video-recognition-paused" transform="translate(-111.000000, -461.000000)" fill="#FFFFFF">
+            <g id="video-controller" transform="translate(19.000000, 438.000000)">
+                <g id="volume" transform="translate(59.000000, 17.000000)">
+                    <rect id="volume-adjustable" x="33.9291826" y="6.8077821" width="35.6256417" height="4.25486381" rx="2.12743191"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

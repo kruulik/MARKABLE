@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>light-cross</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-72.7%" y="-71.4%" width="240.9%" height="247.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="video-recognition-challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="video-recognition-paused" transform="translate(-827.000000, -39.000000)" stroke="#FFFFFF">
+            <g id="results-pop-up">
+                <g id="pop-up-forground" transform="translate(1.000000, 0.000000)">
+                    <g id="light-cross" filter="url(#filter-1)" transform="translate(842.202796, 54.495689) rotate(-45.000000) translate(-842.202796, -54.495689) translate(831.202796, 43.995689)">
+                        <path d="M0.712597049,10.6889557 L20.7161495,10.6889557" id="light-cross-2"></path>
+                        <path d="M10.6889557,0.712597049 L10.6889557,20.7161495" id="light-cross-1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="817px" height="6px" viewBox="0 0 817 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>timeline-full-body</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="video-recognition-challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.521093786">
+        <g id="video-recognition-paused" transform="translate(-62.000000, -438.000000)" fill="#D0EDE9">
+            <g id="video-controller" transform="translate(19.000000, 438.000000)">
+                <g id="timeline">
+                    <rect id="timeline-full-body" transform="translate(451.580967, 2.899964) scale(1, -1) translate(-451.580967, -2.899964) " x="43.6510946" y="0.606666424" width="815.859744" height="4.5865948" rx="2.2932974"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
