@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Root from './containers/root';
 import registerServiceWorker from './registerServiceWorker';
 import configureStore from './store/store';
-
-// ReactDOM.render(<App />, document.getElementById('root'));
 
 document.addEventListener( 'DOMContentLoaded', () => {
   const root = document.getElementById( 'root' );
@@ -15,7 +13,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
   window.getState = store.getState;
   window.dispatch = store.dispatch; // just for testing!
 
-  ReactDOM.render( <h1>Hello!</h1>, root );
+  ReactDOM.render(<Root store={ store }/>, root);
 } );
 
 registerServiceWorker();
