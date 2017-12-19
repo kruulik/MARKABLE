@@ -2,17 +2,28 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 
+import { DefaultPlayer as Video } from 'react-html5video';
+
 class VideoPlayer extends Component {
   constructor(props) {
     super(props);
     this.state = ({
-
+      soource: "assets/sample_video.mp4"
     })
   }
 
   render() {
     return (
-      <h1>Video Player</h1>
+      <div>
+        <h1>Video Player</h1>
+        <Video autoPlay loop muted
+          controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+        >
+          <source src={this.state.source} type="video/mp4" />
+          
+        </Video>
+      </div>
+
     )
   }
 }
