@@ -8,7 +8,7 @@ class VideoPlayer extends Component {
   constructor(props) {
     super(props);
     this.state = ({
-      soource: "assets/sample_video.mp4"
+      source: "../assets/sample_video.mp4"
     })
   }
 
@@ -20,7 +20,7 @@ class VideoPlayer extends Component {
           controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
         >
           <source src={this.state.source} type="video/mp4" />
-          
+
         </Video>
       </div>
 
