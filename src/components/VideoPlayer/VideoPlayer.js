@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux'
+import { bindActionCreators } from 'redux';
+
+import * as uiActions from 'actions/uiActions';
 
 import { DefaultPlayer as Video } from 'react-html5video';
 
@@ -8,7 +10,7 @@ class VideoPlayer extends Component {
   constructor(props) {
     super(props);
     this.state = ({
-      source: "https://drive.google.com/uc?export=download&id=19LushkAMTxBJAqr_dwMI8ZJpQ_Rxxx57",
+      source: "https://github.com/kruulik/MARKABLE/blob/master/assets/sample_video.mp4?raw=true",
       video: null,
       progress: '0%',
       isMouseDown: false
@@ -17,8 +19,15 @@ class VideoPlayer extends Component {
 
   togglePlay = () => {
     const { video } = this.state;
-    const method = video.paused ? 'play' : 'pause';
-    video[method]();
+    const {openModal, closeModal} = this.props;
+
+    if (video.paused) {
+      video.play();
+      this.props.closeModal();
+    } else {
+      video.pause();
+      this.props.openModal();
+    }
   }
 
   handleProgress = () => {
@@ -45,7 +54,6 @@ class VideoPlayer extends Component {
   render() {
     return (
       <div className="player">
-        <h1>Video Player</h1>
         <video
           className="viewer"
           ref="video"
@@ -72,7 +80,7 @@ const mapStateToProps = ( state ) => {
 };
 
 const mapDispatchToProps = dispatch => {
-
+  return bindActionCreators({...uiActions}, dispatch);
 };
 
-export default connect( mapStateToProps, null )( VideoPlayer );
+export default connect( mapStateToProps, mapDispatchToProps )( VideoPlayer );
