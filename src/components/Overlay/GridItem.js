@@ -19,7 +19,7 @@ const transitionStyles = {
 };
 
 const Thumb = ({ in: inProp, children }) => {
-  debugger
+  // debugger
   return (
     <Transition in={inProp} timeout={duration}>
       {(state) => (
@@ -39,16 +39,21 @@ class GridItem extends Component {
   constructor(props){
     super(props);
     this.state= ({
-      in: false
+      show: false
     })
   }
 
+  componentWillReceiveProps(nextProps){
+    // debugger
+  }
+
   componentDidMount(){
-    this.setState({in: true})
+    // debugger
+    this.setState({show: true})
   }
 
   componentWillUnmount(){
-    this.setState({in: false})
+    this.setState({show: false})
   }
 
   render() {
