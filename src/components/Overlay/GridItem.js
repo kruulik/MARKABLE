@@ -9,10 +9,10 @@ class GridItem extends Component {
 
   render() {
     const { image, title, price, company } = this.props;
-    debugger
+    
     return (
       <div className="gridItem" >
-        <img src="assets/category-1-glasses/match-1.jpg"/>
+        <img className="productThumb" src={image}/>
       </div>
     )
 

@@ -1,7 +1,7 @@
 const matches = {
   categories: [
     {
-      name: "glasses",
+      name: "Glasses",
       matchIDs: [
         "UID1",
         "UID2",
@@ -13,7 +13,7 @@ const matches = {
         "UID8"
       ]
     }, {
-      name: "clutches",
+      name: "Clutches",
       matchIDs: [
         "UID9",
         "UID10",
@@ -23,10 +23,10 @@ const matches = {
         "UID14"
       ]
     }, {
-      name: "dresses",
+      name: "Dresses",
       matchIDs: [ "UID15", "UID16", "UID17", "UID18" ]
     }, {
-      name: "jewelry",
+      name: "Jewelry",
       matchIDs: [ "UID19", "UID20", "UID21", "UID22" ]
     }
   ],
@@ -34,7 +34,7 @@ const matches = {
   productDetails: {
     UID1: {
       category: "glasses",
-      image: "assets/category-1-glasses/match-1.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-1-glasses/match-1.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -43,7 +43,7 @@ const matches = {
     },
     UID2: {
       category: "glasses",
-      image: "assets/category-1-glasses/match-2.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-1-glasses/match-2.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -52,7 +52,7 @@ const matches = {
     },
     UID3: {
       category: "glasses",
-      image: "assets/category-1-glasses/match-3.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-1-glasses/match-3.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -61,7 +61,7 @@ const matches = {
     },
     UID4: {
       category: "glasses",
-      image: "assets/category-1-glasses/match-4.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-1-glasses/match-4.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -70,7 +70,7 @@ const matches = {
     },
     UID5: {
       category: "glasses",
-      image: "assets/category-1-glasses/match-5.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-1-glasses/match-5.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -79,7 +79,7 @@ const matches = {
     },
     UID6: {
       category: "glasses",
-      image: "assets/category-1-glasses/match-6.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-1-glasses/match-6.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -88,7 +88,7 @@ const matches = {
     },
     UID7: {
       category: "glasses",
-      image: "assets/category-1-glasses/match-7.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-1-glasses/match-7.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -97,7 +97,7 @@ const matches = {
     },
     UID8: {
       category: "glasses",
-      image: "assets/category-1-glasses/match-8.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-1-glasses/match-8.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -106,7 +106,7 @@ const matches = {
     },
     UID9: {
       category: "clutches",
-      image: "assets/category-2-clutches/match-1.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-2-clutches/match-1.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -115,7 +115,7 @@ const matches = {
     },
     UID10: {
       category: "clutches",
-      image: "assets/category-2-clutches/match-2.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-2-clutches/match-2.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -124,7 +124,7 @@ const matches = {
     },
     UID11: {
       category: "clutches",
-      image: "assets/category-2-clutches/match-3.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-2-clutches/match-3.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -133,7 +133,7 @@ const matches = {
     },
     UID12: {
       category: "clutches",
-      image: "assets/category-2-clutches/match-4.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-2-clutches/match-4.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -142,7 +142,7 @@ const matches = {
     },
     UID13: {
       category: "clutches",
-      image: "assets/category-2-clutches/match-5.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-2-clutches/match-5.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -151,7 +151,7 @@ const matches = {
     },
     UID14: {
       category: "clutches",
-      image: "assets/category-2-clutches/match-6.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-2-clutches/match-6.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -160,7 +160,7 @@ const matches = {
     },
     UID15: {
       category: "dresses",
-      image: "assets/category-3-dresses/match-1.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-3-dresses/match-1.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -169,7 +169,7 @@ const matches = {
     },
     UID16: {
       category: "dresses",
-      image: "assets/category-3-dresses/match-2.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-3-dresses/match-2.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -178,7 +178,7 @@ const matches = {
     },
     UID17: {
       category: "dresses",
-      image: "assets/category-3-dresses/match-3.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-3-dresses/match-3.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -187,7 +187,7 @@ const matches = {
     },
     UID18: {
       category: "dresses",
-      image: "assets/category-3-dresses/match-4.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-3-dresses/match-4.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -196,7 +196,7 @@ const matches = {
     },
     UID19: {
       category: "jewelry",
-      image: "assets/category-4-jewelry/match-1.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-4-jewellry/match-1.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -205,7 +205,7 @@ const matches = {
     },
     UID20: {
       category: "jewelry",
-      image: "assets/category-4-jewelry/match-2.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-4-jewellry/match-2.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -214,7 +214,7 @@ const matches = {
     },
     UID21: {
       category: "jewelry",
-      image: "assets/category-4-jewelry/match-3.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-4-jewellry/match-3.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",
@@ -223,7 +223,7 @@ const matches = {
     },
     UID22: {
       category: "jewelry",
-      image: "assets/category-4-jewelry/match-4.jpg",
+      image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-4-jewellry/match-4.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
       price: 519,
       company: "MYKITA",

@@ -83,12 +83,36 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* padding-left: 20px; */
-  /* padding-right: 20px;  */
 }
 
 .modal-title h1 {
   color: white;
   font-weight: 200;
   font-size: 26px;
+}
+
+.gridItem img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.rowHeader {
+  color: white;
+  font-weight: 300;
+}
+
+.slider {
+  padding: 0 5%;
+  margin: 0 -5%;
+  overflow-x: scroll; 
+}
+
+.sliderContent {
+  display: flex;
+  overflow-x: visible;
+}
+
+.gridItem {
+  margin-right: 8px;
 }
