@@ -9,8 +9,9 @@ import lightCross from 'assets/icon-assets/light-cross.svg';
 class Overlay extends Component {
 
   render() {
+
     return (
-      <div id="product-modal" >
+      <div className={`product-modal ${this.props.classList}`} >
         <div className="modal-title">
           <span><h1><strong>Similar Products </strong>in Scene</h1></span>
           <img src={lightCross} onClick={this.props.toggleModal}/>

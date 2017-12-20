@@ -49,7 +49,7 @@ body {
   background: #5BC4B4;
 }
 
-#product-modal {
+.product-modal {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
   z-index: 100;
@@ -58,7 +58,19 @@ body {
   right: 0;
   bottom: 0;
   padding: 20px 5%;
-  overflow-y: scroll; 
+  overflow-y: scroll;
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.product-modal.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .close_modal {

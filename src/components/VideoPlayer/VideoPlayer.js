@@ -7,7 +7,7 @@ class VideoPlayer extends Component {
   constructor(props) {
     super(props);
     this.state = ({
-      source: "https://github.com/kruulik/MARKABLE/blob/master/assets/sample_video.mp4?raw=true",
+      source: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/sample_video.mp4?raw=true",
       video: null,
       progress: '0%',
       isMouseDown: false
@@ -49,7 +49,7 @@ class VideoPlayer extends Component {
     return (
       <div className="player">
         <video
-          
+
           className="viewer"
           ref="video"
           src={this.state.source}

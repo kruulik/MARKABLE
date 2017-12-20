@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import * as uiActions from 'actions/uiActions';
+import * as itemActions from 'actions/itemActions';
 
 class ProductGrid extends Component {
 
@@ -11,7 +12,7 @@ class ProductGrid extends Component {
   render() {
     return (
       <div id="product-grid" >
-        <h2>Product Grid</h2>
+
       </div>
     )
 
@@ -25,7 +26,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = dispatch => {
-  return bindActionCreators({...uiActions}, dispatch);
+  return bindActionCreators({...uiActions, ...itemActions}, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductGrid);
