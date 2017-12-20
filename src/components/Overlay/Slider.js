@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 import { GridItem } from 'components';
 
@@ -11,26 +12,35 @@ import * as itemActions from 'actions/itemActions';
 
 class Slider extends Component {
 
-  renderItems = (itemIDs) => {
+
+  renderItems = () => {
+    const { itemIDs, borderColor } = this.props;
     const items = matches["productDetails"];
-    const {borderColor} = this.props;
-    const gridItems = itemIDs.map(id => {
-      return (
-        <GridItem key={id} image={items[id].image} title={items[id].title} price={items[id].price} company={items[id].company} classStyles={borderColor}/>
-      )
-    })
 
-    return gridItems;
-
+    return itemIDs.map(id => (
+      <GridItem
+        key={id}
+        image={items[id].image}
+        title={items[id].title}
+        price={items[id].price}
+        company={items[id].company}
+        classStyles={borderColor}
+      />
+    ))
+  }
+  componentDidMount(){
+    this.renderItems();
   }
 
   render() {
-    const { itemIDs } = this.props;
     return (
       <div className="slider" >
-        <div className="sliderContent">
-          {this.renderItems(itemIDs)}
+        <div className='sliderContent'>
+
+          {this.renderItems()}
+
         </div>
+
       </div>
     )
 

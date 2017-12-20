@@ -83,7 +83,7 @@ body {
   height: 230px;
   width: 150px;
   margin-right: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column; }
@@ -100,12 +100,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-weight: 100;
+    font-weight: 300;
     color: white;
     height: 100%; }
   .gridItem .title {
     margin: 0;
-    font-size: 12px; }
+    font-size: 14px; }
   .gridItem .thumbContainer {
     background-color: white;
     height: 150px;
@@ -119,7 +119,8 @@ body {
     max-height: 100%;
     object-fit: contain; }
   .gridItem .row2 {
-    font-size: 14px; }
+    margin-top: 2px;
+    font-size: 16px; }
   .gridItem .price:after {
     content: "";
     height: 100%;
@@ -137,3 +138,17 @@ body {
   .slider .sliderContent {
     display: flex;
     overflow-x: visible; }
+
+.sliderContent .thumb-enter {
+  opacity: 0.01; }
+
+.sliderContent .thumb-enter.thumb-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in; }
+
+.sliderContent .thumb-leave {
+  opacity: 1; }
+
+.sliderContent .thumb-leave.thumb-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in; }
