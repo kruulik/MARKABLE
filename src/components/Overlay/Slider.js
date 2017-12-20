@@ -13,11 +13,10 @@ class Slider extends Component {
 
   renderItems = (itemIDs) => {
     const items = matches["productDetails"];
-
+    const {borderColor} = this.props;
     const gridItems = itemIDs.map(id => {
-
       return (
-        <GridItem key={id} image={items[id].image} title={items[id].title} price={items[id].price} company={items[id].company}/>
+        <GridItem key={id} image={items[id].image} title={items[id].title} price={items[id].price} company={items[id].company} classStyles={borderColor}/>
       )
     })
 

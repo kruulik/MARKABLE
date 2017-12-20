@@ -13,12 +13,13 @@ class ProductGrid extends Component {
 
   renderRows = () => {
     const rows = matches["categories"];
+
     const items = rows.map(row => {
 
       return (
         <div className="row" key={row.name}>
-          <h2 className="rowHeader">{row.name}</h2>
-          <Slider itemIDs={row.matchIDs}/>
+          {/* <h2 className="rowHeader">{row.name}</h2> */}
+          <Slider itemIDs={row.matchIDs} borderColor={row.color}/>
         </div>
       )
     })

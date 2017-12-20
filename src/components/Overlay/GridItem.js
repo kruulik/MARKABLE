@@ -8,15 +8,19 @@ import * as itemActions from 'actions/itemActions';
 class GridItem extends Component {
 
   render() {
-    const { image, title, price, company } = this.props;
+    const { image, title, price, company, classStyles } = this.props;
 
     return (
-      <div className="gridItem" >
-        <img className="productThumb" src={image}/>
+      <div className={`gridItem ${classStyles}`} >
+        <div className="thumbContainer">
+          <img className="productThumb" src={image}/>
+        </div>
         <div className="info">
           <p className="title">{title}</p>
-          <span>${price}</span>
-          <span>{company}</span>
+          <div className="row2">
+            <span className="price">${price}</span>
+            <span className="company">{company}</span>
+          </div>
         </div>
       </div>
     )

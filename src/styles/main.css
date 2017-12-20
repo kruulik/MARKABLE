@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700");
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,18 +80,51 @@ body {
 
 .gridItem {
   background: rgba(43, 43, 43, 0.8);
-  height: 150px;
-  width: 100px;
-  border-bottom: 3px solid #D3B380;
-  margin-right: 8px; }
+  height: 230px;
+  width: 150px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column; }
+  .gridItem.gold {
+    border-bottom: 5px solid #D3B380; }
+  .gridItem.khaki {
+    border-bottom: 5px solid #D9CFC3; }
+  .gridItem.gray {
+    border-bottom: 5px solid #C2C2C2; }
+  .gridItem.magenta {
+    border-bottom: 5px solid #DC6094; }
   .gridItem .info {
     padding: 8px;
-    white-space: wrap;
-    color: white; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 100;
+    color: white;
+    height: 100%; }
+  .gridItem .title {
+    margin: 0;
+    font-size: 12px; }
+  .gridItem .thumbContainer {
+    background-color: white;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; }
   .gridItem img {
-    height: 100px;
-    width: 100px;
-    object-fit: cover; }
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain; }
+  .gridItem .row2 {
+    font-size: 14px; }
+  .gridItem .price:after {
+    content: "";
+    height: 100%;
+    margin: 0 8px;
+    border-right: 1px solid white; }
 
 .rowHeader {
   color: white;

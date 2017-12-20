@@ -2,6 +2,7 @@ const matches = {
   categories: [
     {
       name: "Glasses",
+      color: "gold",
       matchIDs: [
         "UID1",
         "UID2",
@@ -14,6 +15,7 @@ const matches = {
       ]
     }, {
       name: "Clutches",
+      color: "khaki",
       matchIDs: [
         "UID9",
         "UID10",
@@ -24,9 +26,11 @@ const matches = {
       ]
     }, {
       name: "Dresses",
+      color: "gray",
       matchIDs: [ "UID15", "UID16", "UID17", "UID18" ]
     }, {
       name: "Jewelry",
+      color: "magenta",
       matchIDs: [ "UID19", "UID20", "UID21", "UID22" ]
     }
   ],
