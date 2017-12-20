@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-
-import * as uiActions from 'actions/uiActions';
 
 import { DefaultPlayer as Video } from 'react-html5video';
 
@@ -18,16 +15,7 @@ class VideoPlayer extends Component {
   }
 
   togglePlay = () => {
-    const { video } = this.state;
-    const {openModal, closeModal} = this.props;
-
-    if (video.paused) {
-      video.play();
-      this.props.closeModal();
-    } else {
-      video.pause();
-      this.props.openModal();
-    }
+    // handled by parent
   }
 
   handleProgress = () => {
@@ -36,6 +24,12 @@ class VideoPlayer extends Component {
     this.setState({
       progress: `${percent}%`
     });
+  }
+
+  componentWillReceiveProps(nextProps){
+    const { video } = this.state;
+    const { modalOpen } = nextProps.state.ui;
+    modalOpen ? video.pause() : video.play();
   }
 
   componentDidMount() {
@@ -55,10 +49,11 @@ class VideoPlayer extends Component {
     return (
       <div className="player">
         <video
+          
           className="viewer"
           ref="video"
           src={this.state.source}
-          onClick={this.togglePlay}
+          onClick={this.props.handlePlayToggle}
         />
 
         <div className="controls">
@@ -80,7 +75,6 @@ const mapStateToProps = ( state ) => {
 };
 
 const mapDispatchToProps = dispatch => {
-  return bindActionCreators({...uiActions}, dispatch);
 };
 
-export default connect( mapStateToProps, mapDispatchToProps )( VideoPlayer );
+export default connect( mapStateToProps, null )( VideoPlayer );

@@ -49,7 +49,7 @@ body {
   background: #5BC4B4;
 }
 
-#product_grid_overlay {
+#product-modal {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
   z-index: 100;
@@ -57,10 +57,26 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  padding: 20px 5%;
+  overflow-y: scroll; 
 }
 
 .close_modal {
   width: 5em;
   height: 5em;
   fill: red;
+}
+
+.modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding-left: 20px; */
+  /* padding-right: 20px;  */
+}
+
+.modal-title h1 {
+  color: white;
+  font-weight: 200;
+  font-size: 26px;
 }

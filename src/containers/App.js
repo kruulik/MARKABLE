@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { VideoPlayer } from '../components';
-import { ProductGrid } from '../components';
+import { VideoPlayer } from 'components';
+import { Overlay } from 'components';
+
+import { bindActionCreators } from 'redux';
+import * as uiActions from 'actions/uiActions';
+
 
 class App extends Component {
 
+  toggleModal = () => {
+    const { modal, closeModal, openModal } = this.props;
+    modal ? closeModal() : openModal();
+  }
 
   render() {
     const { modal } = this.props;
 
     return (
       <div id="mainContainer">
-        { modal ? <ProductGrid /> : null }
-        <VideoPlayer />
+        { modal ? <Overlay toggleModal={this.toggleModal}/> : null }
+        <VideoPlayer handlePlayToggle={this.toggleModal} />
       </div>
     )
   }
@@ -26,9 +34,8 @@ const mapStateToProps = (state) => {
   };
 };
 
-// const mapDispatchToProps = dispatch => {
-//   return {
-//   };
-// };
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators({...uiActions}, dispatch);
+};
 
-export default connect(mapStateToProps, null)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
