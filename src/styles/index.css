@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.viewer {
+  width: 100%;
+}
+
+.player {
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  padding: 10px
+}
+.controls {
+  height: 46px;
+  width: 100%;
+}
+
+.controls .progress {
+  height: 8px;
+  background: #CFEDE8;
+}
+
+.controls .fill {
+  height: 100%;
+  background: #5BC4B4;
+}

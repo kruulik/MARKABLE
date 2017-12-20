@@ -8,20 +8,57 @@ class VideoPlayer extends Component {
   constructor(props) {
     super(props);
     this.state = ({
-      source: "https://drive.google.com/uc?export=download&id=19LushkAMTxBJAqr_dwMI8ZJpQ_Rxxx57"
+      source: "https://drive.google.com/uc?export=download&id=19LushkAMTxBJAqr_dwMI8ZJpQ_Rxxx57",
+      video: null,
+      progress: '0%',
+      isMouseDown: false
     })
+  }
+
+  togglePlay = () => {
+    const { video } = this.state;
+    const method = video.paused ? 'play' : 'pause';
+    video[method]();
+  }
+
+  handleProgress = () => {
+    const { video } = this.state;
+    const percent = (video.currentTime / video.duration) * 100;
+    this.setState({
+      progress: `${percent}%`
+    });
+  }
+
+  componentDidMount() {
+    this.setState({
+      video: this.refs.video
+    }, () => {
+      ['pause', 'play'].forEach(event => {
+        this.state.video.addEventListener(event, () => {
+          this.forceUpdate();
+        });
+      });
+      this.state.video.addEventListener('timeupdate', this.handleProgress);
+    });
   }
 
   render() {
     return (
-      <div>
+      <div className="player">
         <h1>Video Player</h1>
-        <Video 
-          controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-        >
-          <source src={this.state.source} type="video/mp4" />
+        <video
+          className="viewer"
+          ref="video"
+          src={this.state.source}
+          onClick={this.togglePlay}
+        />
 
-        </Video>
+        <div className="controls">
+          <div className="progress">
+            <div className="fill" style={{width: this.state.progress}}></div>
+          </div>
+        </div>
+
       </div>
 
     )
