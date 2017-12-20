@@ -9,27 +9,42 @@ import * as itemActions from 'actions/itemActions';
 const duration = 300;
 
 const defaultStyle = {
-  transition: `opacity ${duration}ms ease-in-out`,
-  opacity: 0,
+  transition: `${duration}ms ease-in-out`,
+  transitionProperty: 'opacity, transform'
 }
 
 const transitionStyles = {
-  entering: { opacity: 0 },
-  entered: { opacity: 1 },
-};
+  entering: {
+    opacity: 0,
+    transform: 'scale(0.1)'
+  },
+  entered: {
+    opacity: 1,
+    transform: 'scale(1)'
+  },
+  exiting: {
+    opacity: 0,
+    transform: 'scale(0.1)'
+  }
+}
 
 const Thumb = ({ in: inProp, children }) => {
   // debugger
   return (
     <Transition in={inProp} timeout={duration}>
-      {(state) => (
-        <div style={{
-          ...defaultStyle,
-          ...transitionStyles[state]
-        }}>
-          {children}
-        </div>
-      )}
+      {(state) => {
+        if (state === 'exited') {
+          return null
+        }
+        return (
+          <div style={{
+            ...defaultStyle,
+            ...transitionStyles[state]
+          }}>
+            {children}
+          </div>
+        )
+      }}
     </Transition>
   )
 
@@ -41,10 +56,6 @@ class GridItem extends Component {
     this.state= ({
       show: false
     })
-  }
-
-  componentWillReceiveProps(nextProps){
-    // debugger
   }
 
   componentDidMount(){
@@ -59,7 +70,6 @@ class GridItem extends Component {
   render() {
     const { id, image, title, price, company, classStyles } = this.props;
     const {show} = this.state;
-    // debugger
     return (
       <Thumb in={show}>
 

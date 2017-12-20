@@ -138,17 +138,3 @@ body {
   .slider .sliderContent {
     display: flex;
     overflow-x: visible; }
-
-.sliderContent .thumb-enter {
-  opacity: 0.01; }
-
-.sliderContent .thumb-enter.thumb-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in; }
-
-.sliderContent .thumb-leave {
-  opacity: 1; }
-
-.sliderContent .thumb-leave.thumb-leave-active {
-  opacity: 0.01;
-  transition: opacity 500ms ease-in; }

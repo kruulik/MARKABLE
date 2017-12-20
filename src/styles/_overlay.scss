@@ -175,23 +175,3 @@ body {
     overflow-x: visible;
   }
 }
-
-.sliderContent {
-  .thumb-enter {
-    opacity: 0.01;
-  }
-
-  .thumb-enter.thumb-enter-active {
-    opacity: 1;
-    transition: opacity 500ms ease-in;
-  }
-
-  .thumb-leave {
-    opacity: 1;
-  }
-
-  .thumb-leave.thumb-leave-active {
-    opacity: 0.01;
-    transition: opacity 500ms ease-in;
-  }
-}

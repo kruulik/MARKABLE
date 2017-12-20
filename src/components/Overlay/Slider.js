@@ -11,6 +11,12 @@ import * as uiActions from 'actions/uiActions';
 import * as itemActions from 'actions/itemActions';
 
 class Slider extends Component {
+  constructor(props){
+    super(props);
+    this.state= ({
+      items: null
+    })
+  }
 
 
   renderItems = () => {
@@ -18,14 +24,16 @@ class Slider extends Component {
     const items = matches["productDetails"];
 
     return itemIDs.map(id => (
-      <GridItem
-        key={id}
-        image={items[id].image}
-        title={items[id].title}
-        price={items[id].price}
-        company={items[id].company}
-        classStyles={borderColor}
-      />
+
+        <GridItem
+          key={id}
+          image={items[id].image}
+          title={items[id].title}
+          price={items[id].price}
+          company={items[id].company}
+          classStyles={borderColor}
+        /> 
+
     ))
   }
   componentDidMount(){
