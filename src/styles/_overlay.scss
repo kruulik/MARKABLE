@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#mainContainer {
+  position: relative;
+}
+
+.viewer {
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.player {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  padding: 10px
+}
+.controls {
+  height: 46px;
+  width: 100%;
+}
+
+.controls .progress {
+  height: 8px;
+  border-radius: 5px;
+  background: #CFEDE8;
+}
+
+.controls .fill {
+  height: 100%;
+  background: #5BC4B4;
+}
+
+.product-modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 5%;
+  overflow-y: scroll;
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.product-modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close_modal {
+  width: 5em;
+  height: 5em;
+  fill: red;
+}
+
+.modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-title h1 {
+  color: white;
+  font-weight: 200;
+  font-size: 26px;
+}
+
+.gridItem {
+  background: rgba(43, 43, 43, 0.8);
+  height: 150px;
+  width: 100px;
+  border-bottom: 3px solid #D3B380;
+  margin-right: 8px;
+
+  .info {
+    padding: 8px;
+    white-space: wrap;
+    color: white;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+}
+
+.rowHeader {
+  color: white;
+  font-weight: 300;
+}
+
+.slider {
+  padding: 0 5%;
+  margin: 0 -5%;
+  overflow-x: scroll;
+
+  .sliderContent {
+    display: flex;
+    overflow-x: visible;
+  }
+
+}

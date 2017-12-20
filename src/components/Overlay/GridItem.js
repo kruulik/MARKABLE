@@ -9,10 +9,15 @@ class GridItem extends Component {
 
   render() {
     const { image, title, price, company } = this.props;
-    
+
     return (
       <div className="gridItem" >
         <img className="productThumb" src={image}/>
+        <div className="info">
+          <p className="title">{title}</p>
+          <span>${price}</span>
+          <span>{company}</span>
+        </div>
       </div>
     )
 

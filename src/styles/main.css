@@ -1,6 +1,5 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -10,44 +9,37 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
-}
+  width: 100vw; }
 
 #mainContainer {
-  position: relative;
-}
+  position: relative; }
 
 .viewer {
   max-height: 100vh;
-  max-width: 100vw;
-}
+  max-width: 100vw; }
 
 .player {
   position: relative;
   width: 100%;
-  max-width: 100vw;
-}
+  max-width: 100vw; }
 
 .controls {
   position: absolute;
   bottom: 10px;
-  padding: 10px
-}
+  padding: 10px; }
+
 .controls {
   height: 46px;
-  width: 100%;
-}
+  width: 100%; }
 
 .controls .progress {
   height: 8px;
   border-radius: 5px;
-  background: #CFEDE8;
-}
+  background: #CFEDE8; }
 
 .controls .fill {
   height: 100%;
-  background: #5BC4B4;
-}
+  background: #5BC4B4; }
 
 .product-modal {
   position: absolute;
@@ -59,60 +51,55 @@ body {
   bottom: 0;
   padding: 20px 5%;
   overflow-y: scroll;
-
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 .product-modal.show {
   opacity: 1;
-  visibility: visible;
-}
+  visibility: visible; }
 
 .close_modal {
   width: 5em;
   height: 5em;
-  fill: red;
-}
+  fill: red; }
 
 .modal-title {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .modal-title h1 {
   color: white;
   font-weight: 200;
-  font-size: 26px;
-}
+  font-size: 26px; }
 
-.gridItem img {
-  height: 100px;
+.gridItem {
+  background: rgba(43, 43, 43, 0.8);
+  height: 150px;
   width: 100px;
-  object-fit: cover;
-}
+  border-bottom: 3px solid #D3B380;
+  margin-right: 8px; }
+  .gridItem .info {
+    padding: 8px;
+    white-space: wrap;
+    color: white; }
+  .gridItem img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover; }
 
 .rowHeader {
   color: white;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
 .slider {
   padding: 0 5%;
   margin: 0 -5%;
-  overflow-x: scroll; 
-}
-
-.sliderContent {
-  display: flex;
-  overflow-x: visible;
-}
-
-.gridItem {
-  margin-right: 8px;
-}
+  overflow-x: scroll; }
+  .slider .sliderContent {
+    display: flex;
+    overflow-x: visible; }
