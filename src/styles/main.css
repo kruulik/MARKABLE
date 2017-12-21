@@ -140,5 +140,9 @@ body {
   .slider .sliderContent {
     padding: 10px 0;
     display: flex;
-    overflow-x: visible;
-    overflow-y: hidden; }
+    overflow-x: visible; }
+
+.save-icon {
+  position: absolute;
+  top: 0;
+  left: 130px; }

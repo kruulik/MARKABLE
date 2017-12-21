@@ -3,11 +3,13 @@ import Overlay from './Overlay/Overlay';
 import ProductGrid from './Overlay/ProductGrid';
 import Slider from './Overlay/Slider';
 import GridItem from './Overlay/GridItem';
+import Star from './UI/Star';
 
 export {
   VideoPlayer,
   Overlay,
   ProductGrid,
   Slider,
-  GridItem
+  GridItem,
+  Star
 }

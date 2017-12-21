@@ -3,8 +3,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Transition } from 'react-transition-group'
 
+import { Star } from 'components';
+
 import * as uiActions from 'actions/uiActions';
 import * as itemActions from 'actions/itemActions';
+
 
 const duration = 300;
 
@@ -53,7 +56,8 @@ class GridItem extends Component {
   constructor(props){
     super(props);
     this.state= ({
-      show: false
+      show: false,
+      mouse: false
     })
   }
 
@@ -65,14 +69,32 @@ class GridItem extends Component {
     this.setState({show: false})
   }
 
+  mouseOver = () => {
+    this.setState({mouse: true})
+  }
+
+  mouseOut = () => {
+    this.setState({mouse: false})
+  }
+
+  handleSelect = (selected) => {
+    if (selected) {
+      this.props.saveItem(this.props.reference)
+    } else {
+      this.props.unSaveItem(this.props.reference)
+    }
+  }
+
   render() {
-    const { id, image, title, price, company, classStyles } = this.props;
+    const { reference, image, title, price, company, classStyles } = this.props;
     const {show} = this.state;
     return (
-      <Thumb in={show}>
-        <div className={`gridItem ${classStyles}`} >
+      <Thumb in={show} >
+        <div
+          className={`gridItem ${classStyles}`} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}>
+          <Star mouse={this.state.mouse} onSelect={(e) => this.handleSelect(e)}/>
           <div className="thumbContainer">
-            <img className="productThumb" src={image}/>
+            <img className="productThumb" src={image} />
           </div>
           <div className="info">
             <p className="title">{title}</p>

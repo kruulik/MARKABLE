@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 import { GridItem } from 'components';
 
@@ -25,6 +24,7 @@ class Slider extends Component {
     return itemIDs.map(id => (
         <GridItem
           key={id}
+          reference={id}
           image={items[id].image}
           title={items[id].title}
           price={items[id].price}
