@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+
+// The only purpose for this library was to experiment with alternate animation + rendering methods. The same animations are just as easily achieved by appending class names.
 import { Transition } from 'react-transition-group'
 
 import { Star } from 'components';

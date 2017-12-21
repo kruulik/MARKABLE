@@ -1,6 +1,7 @@
 export const SAVE_ITEM = 'SAVE_ITEM';
 export const UNSAVE_ITEM = 'UNSAVE_ITEM';
 export const VIEW_DETAILS = 'VIEW_DETAILS';
+// Not implemented
 export const BEGIN_CHECKOUT = 'BEGIN_CHECKOUT';
 
 export const saveItem = (reference) => {

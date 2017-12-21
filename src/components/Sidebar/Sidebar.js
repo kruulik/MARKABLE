@@ -36,7 +36,6 @@ class Sidebar extends Component {
   }
 
   handleSelect = (itemID) => {
-    debugger
     if (itemID) {
       this.props.saveItem(this.props.reference)
     } else {

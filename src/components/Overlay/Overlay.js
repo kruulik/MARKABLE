@@ -11,7 +11,6 @@ class Overlay extends Component {
   render() {
     return (
       <div className={`product-modal ${this.props.classList}`} >
-
         <div className="modal-title">
           <span><h1><strong>Similar Products </strong>in Scene</h1></span>
           <img src={lightCross} onClick={this.props.toggleModal}/>
@@ -22,7 +21,6 @@ class Overlay extends Component {
 
   }
 }
-
 
 const mapDispatchToProps = dispatch => {
   return bindActionCreators({...uiActions}, dispatch);

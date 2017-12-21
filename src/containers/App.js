@@ -35,7 +35,6 @@ class App extends Component {
 const mapStateToProps = (state) => {
   const modal = state.ui.modalOpen
   return {
-    state,
     modal
   };
 };

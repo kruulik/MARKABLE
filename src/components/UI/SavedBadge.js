@@ -29,7 +29,6 @@ class SavedBadge extends Component {
 }
 
   render() {
-
     const {items} = this.state;
     if (items.length === 0) {
       return null

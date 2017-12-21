@@ -7,8 +7,6 @@ import fullScreen from 'assets/icon-assets/video/icon-exit-full-screen.svg';
 import sound from 'assets/icon-assets/video/volume-button.svg';
 import bigPlay from 'assets/icon-assets/big-play.svg';
 
-import { DefaultPlayer as Video } from 'react-html5video';
-
 class VideoPlayer extends Component {
   constructor(props) {
     super(props);

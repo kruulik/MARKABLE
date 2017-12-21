@@ -25,7 +25,8 @@ const itemsReducer = (state = initialState, action) => {
       prev.splice(idx, 1);
       return merge({}, state, {saved: prev});
     case BEGIN_CHECKOUT:
-      debugger
+    // not yet ready
+    
     default:
       return state;
   }

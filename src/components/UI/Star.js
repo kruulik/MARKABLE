@@ -5,7 +5,6 @@ import clicked from 'assets/icon-assets/save-clicked.svg';
 import hover from 'assets/icon-assets/save-hover.svg';
 import idle from 'assets/icon-assets/save-idol.svg';
 
-
 class Star extends Component {
   constructor(props){
     super(props);
@@ -51,8 +50,6 @@ class Star extends Component {
       })
     }
   }
-
-
 
   render() {
     const { mouse, onSelect } = this.props;

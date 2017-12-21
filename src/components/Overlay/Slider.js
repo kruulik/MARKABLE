@@ -18,10 +18,6 @@ class Slider extends Component {
     })
   }
 
-  handleClick(e){
-    debugger
-  }
-
   renderItems = () => {
     const { itemIDs, borderColor } = this.props;
     const { isActive } = this.state;
@@ -58,7 +54,6 @@ class Slider extends Component {
 }
 
 const mapStateToProps = (state) => {
-  // debugger
   const active = state.ui
   return {
     state
