@@ -7,7 +7,9 @@ import {
 import merge from 'lodash/merge';
 
 const initialState = {
-  activeItem: null
+  activeItem: null,
+  modalOpen: false,
+  sideBarOpen: false 
 }
 let next;
 

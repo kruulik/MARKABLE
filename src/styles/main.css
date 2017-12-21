@@ -13,7 +13,8 @@ body {
   width: 100vw; }
 
 #mainContainer {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .viewer {
   max-height: 100vh;
@@ -156,9 +157,16 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
   width: 270px;
   background: white;
   border: 1px solid #E4E4E4;
   border-radius: 2px 0 0 2px;
-  box-shadow: -4px 0 7px rgba(0, 0, 0, 0.2); }
+  box-shadow: -4px 0 7px rgba(0, 0, 0, 0.2);
+  transition-delay: 500ms;
+  transition: 300ms; }
+  .sidebar-container.open-false {
+    visibility: hidden;
+    left: 100%; }
+  .sidebar-container.open-true {
+    left: calc(100% - 270px);
+    visibility: visible; }

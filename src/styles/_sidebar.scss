@@ -5,10 +5,22 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
   width: 270px;
   background: white;
   border: 1px solid $lightgray;
   border-radius: 2px 0 0 2px;
   box-shadow: -4px 0 7px rgba(0, 0, 0, 0.2);
+  transition-delay: 500ms;  
+  transition: 300ms;
+  &.open-false {
+    visibility: hidden;
+    // right: 270px;
+    // width: 0;
+    left: 100%;
+  }
+  &.open-true {
+    // right: 0px;
+    left: calc(100% - 270px);
+    visibility: visible;
+  }
 }

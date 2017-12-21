@@ -10,10 +10,9 @@ import lightCross from 'assets/icon-assets/light-cross.svg';
 class Overlay extends Component {
 
   render() {
-
     return (
       <div className={`product-modal ${this.props.classList}`} >
-        <Sidebar />
+        
         <div className="modal-title">
           <span><h1><strong>Similar Products </strong>in Scene</h1></span>
           <img src={lightCross} onClick={this.props.toggleModal}/>
@@ -26,8 +25,11 @@ class Overlay extends Component {
 }
 
 const mapStateToProps = (state) => {
+  // debugger
+  // const sidebar = state.ui.sidebar
+  // const activeItem = state.ui.activeItem
   return {
-    state
+
   };
 };
 
@@ -35,4 +37,4 @@ const mapDispatchToProps = dispatch => {
   return bindActionCreators({...uiActions}, dispatch);
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Overlay);
+export default connect(null, mapDispatchToProps)(Overlay);
