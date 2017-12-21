@@ -16,7 +16,6 @@ class Slider extends Component {
       items: null,
       isActive: false
     })
-    // this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e){

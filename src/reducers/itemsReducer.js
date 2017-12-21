@@ -25,7 +25,7 @@ const itemsReducer = (state = initialState, action) => {
       prev.splice(idx, 1);
       return merge({}, state, {saved: prev});
     case VIEW_DETAILS:
-      debugger
+      // debugger
     default:
       return state;
   }

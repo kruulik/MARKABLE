@@ -62,7 +62,7 @@ class GridItem extends Component {
       isActive: true
     })
 
-    this.handleClick = this.handleClick.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount(){
@@ -81,7 +81,8 @@ class GridItem extends Component {
     this.setState({mouse: false})
   }
 
-  handleClick(e) {
+  handleClick = (e) => {
+  
     const {reference} = this.props;
     this.props.selectThumb(this);
     this.props.viewDetails(reference);

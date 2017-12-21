@@ -40,7 +40,7 @@ const matches = {
       category: "glasses",
       image: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/category-1-glasses/match-1.jpg?raw=true",
       title: "BERNHARD WILLHELM FRANZ SUNGLASSES",
-      price: 519,
+      price: 433,
       company: "MYKITA",
       details: "Make his mouth water lovely would girl bye they are runway gucci, my them her brand not.",
       description: "You you already know fierce blouse flawless stylish, fashion shoes gucci you. Shoes prada we we, shoes design you already know girl bye design us. Fashion blouse runway gucci designer luxury luxury luxury."

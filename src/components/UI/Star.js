@@ -17,7 +17,10 @@ class Star extends Component {
   }
 
 
-  handleClick = () => {
+  handleClick = (e) => {
+    
+    e.preventDefault();
+    e.stopPropagation();
     const { selected } = this.state;
     this.setState({
       selected: !this.state.selected,
@@ -63,7 +66,7 @@ class Star extends Component {
         className="save-icon"
         onMouseOver={() => this.mouseOver()}
         onMouseOut={() => this.mouseOut()}
-        onClick={() => this.handleClick()}
+        onClick={(e) => this.handleClick(e)}
       >
         <img src={source} style={{visibility: `${vis}` }}/>
       </div>
