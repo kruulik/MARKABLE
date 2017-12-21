@@ -10,7 +10,7 @@
   border: 1px solid $lightgray;
   border-radius: 2px 0 0 2px;
   box-shadow: -4px 0 7px rgba(0, 0, 0, 0.2);
-  transition-delay: 500ms;
+
   transition: 300ms;
   &.open-false {
     visibility: hidden;
@@ -20,6 +20,7 @@
   }
   &.open-true {
     // right: 0px;
+    transition-delay: 500ms;
     left: calc(100% - 270px);
     visibility: visible;
   }
@@ -95,6 +96,6 @@
   }
   h4 {
     margin: 8px 0;
-    text-transform: uppercase; 
+    text-transform: uppercase;
   }
 }

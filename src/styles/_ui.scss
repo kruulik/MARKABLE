@@ -2,8 +2,12 @@
 
 .save-icon {
   position: absolute;
-  top: 0;
-  left: 130px;
+  top: 10px;
+  left: 120px;
+  &:visited {
+    transform: scale(2);
+    animation-duration: 500ms;
+  }
 }
 
 .button {
@@ -12,7 +16,7 @@
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 400;
-  background-color: white; 
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;

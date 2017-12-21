@@ -24,7 +24,7 @@ class App extends Component {
         { modal ?
           <Overlay classList={"show"} toggleModal={this.toggleModal}/>
         : null }
-        <VideoPlayer handlePlayToggle={this.toggleModal} />
+        <VideoPlayer toggleModal={this.toggleModal} />
       </div>
     )
   }

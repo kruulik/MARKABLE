@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 import play from 'assets/icon-assets/video/controller-play-button.svg';
 import pause from 'assets/icon-assets/video/controller-pause-button.svg';
+import fullScreen from 'assets/icon-assets/video/icon-exit-full-screen.svg';
+import sound from 'assets/icon-assets/video/volume-button.svg';
 
 import { DefaultPlayer as Video } from 'react-html5video';
 
@@ -13,15 +15,22 @@ class VideoPlayer extends Component {
       source: "https://github.com/kruulik/MARKABLE/blob/master/src/assets/sample_video.mp4?raw=true",
       video: null,
       progress: '0%',
-      isMouseDown: false
+      volume: '40%',
+      isMouseDown: false,
+      fullScreen: false
     })
   }
 
-  togglePlay = (e) => {
-    // e.stopPropagation();
+  togglePlay = () => {
     const { video } = this.state;
-    const method = video.paused ? 'play' : 'pause';
-    video[method]();
+    // const method = video.paused ? 'play' : 'pause';
+    // video[method]();
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+      this.props.toggleModal();
+    }
   }
 
   handleProgress = () => {
@@ -52,21 +61,33 @@ class VideoPlayer extends Component {
   }
 
   render() {
+    const {video} = this.state;
     return (
       <div className="player">
         <video
-
           className="viewer"
           ref="video"
           src={this.state.source}
-          onClick={this.props.handlePlayToggle}
+          onClick={this.props.toggleModal}
         />
 
         <div className="controls">
           <div className="progress">
             <div className="fill" style={{width: this.state.progress}}></div>
           </div>
-          <img src={play} onClick={() => this.togglePlay()}/>
+          <div className="buttons">
+            <img className="play" src={video && video.paused ? play : pause} onClick={() => this.togglePlay()}/>
+
+            <div className="volume">
+              <img className="sound" src={sound} />
+              <div className="scrub">
+                <div className="fill" style={{width: this.state.volume}}></div>
+              </div>
+            </div>
+            
+            <img className="fullScreen" src={fullScreen} onClick={() => this.setState({fullScreen: !this.state.fullScreen})} />
+
+          </div>
         </div>
 
       </div>

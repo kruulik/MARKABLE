@@ -25,27 +25,50 @@ h2, h3, h4, h5, h6, p {
 
 .player {
   position: relative;
-  width: 100%;
-  max-width: 100vw; }
+  max-width: 100vw;
+  width: 100vw; }
 
 .controls {
   position: absolute;
-  bottom: 10px;
-  padding: 10px; }
-
-.controls {
-  height: 46px;
-  width: 100%; }
-
-.controls .progress {
-  height: 5px;
-  border-radius: 5px;
-  background: #CFEDE8; }
-
-.controls .fill {
-  height: 100%;
-  border-radius: 5px;
-  background: #5BC4B4; }
+  bottom: 0;
+  padding: 10px;
+  height: 56px;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); }
+  .controls .progress {
+    height: 5px;
+    border-radius: 5px;
+    background: #CFEDE8; }
+    .controls .progress .fill {
+      height: 100%;
+      border-radius: 5px;
+      background: #5BC4B4; }
+  .controls .buttons {
+    padding: 0 36px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px; }
+    .controls .buttons .play {
+      float: left;
+      margin-right: 24px; }
+    .controls .buttons .fullScreen {
+      float: right;
+      right: 10px; }
+    .controls .buttons .volume {
+      float: left;
+      display: flex;
+      align-items: center; }
+      .controls .buttons .volume .scrub {
+        margin-left: 16px;
+        width: 60px;
+        height: 5px;
+        border-radius: 5px;
+        background: #CFEDE8; }
+        .controls .buttons .volume .scrub .fill {
+          height: 100%;
+          border-radius: 5px;
+          background: #5BC4B4; }
 
 .product-modal {
   position: absolute;
@@ -103,9 +126,12 @@ h2, h3, h4, h5, h6, p {
   .gridItem:hover {
     transform: scale(1.05); }
   .gridItem.is-active-false {
+    transition: 300ms ease-in;
     opacity: 0.2; }
   .gridItem.is-active-false:hover {
     opacity: 0.7; }
+  .gridItem:active {
+    transform: scale(1.1); }
   .gridItem .info {
     padding: 8px;
     display: flex;
@@ -153,8 +179,11 @@ h2, h3, h4, h5, h6, p {
 
 .save-icon {
   position: absolute;
-  top: 0;
-  left: 130px; }
+  top: 10px;
+  left: 120px; }
+  .save-icon:visited {
+    transform: scale(2);
+    animation-duration: 500ms; }
 
 .button {
   height: 36px;
@@ -179,12 +208,12 @@ h2, h3, h4, h5, h6, p {
   border: 1px solid #E4E4E4;
   border-radius: 2px 0 0 2px;
   box-shadow: -4px 0 7px rgba(0, 0, 0, 0.2);
-  transition-delay: 500ms;
   transition: 300ms; }
   .sidebar-container.open-false {
     visibility: hidden;
     left: 100%; }
   .sidebar-container.open-true {
+    transition-delay: 500ms;
     left: calc(100% - 270px);
     visibility: visible; }
   .sidebar-container .buttons {
