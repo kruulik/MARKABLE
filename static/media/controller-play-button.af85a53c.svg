@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="18px" viewBox="0 0 13 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>controller-play-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="video-recognition-challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="video-recognition-paused" transform="translate(-43.000000, -454.000000)" fill="#FFFFFF">
+            <g id="video-controller" transform="translate(19.000000, 438.000000)">
+                <path d="M36.6534554,24.2507366 L25.4287208,17.0167298 C24.7628116,16.6580725 24,16.6952972 24,17.9828003 L24,32.2274655 C24,33.4044761 24.8183533,33.5900089 25.4287208,33.193536 L36.6534554,25.9595292 C37.1155149,25.487425 37.1155149,24.7228408 36.6534554,24.2507366" id="controller-play-button"></path>
+            </g>
+        </g>
+    </g>
+</svg>

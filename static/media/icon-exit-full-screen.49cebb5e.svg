@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-exit-full-screen</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="video-recognition-challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="video-recognition-paused" transform="translate(-849.000000, -454.000000)" stroke="#FFFFFF" fill="#FFFFFF">
+            <g id="icon-exit-full-screen" transform="translate(850.000000, 454.000000)">
+                <path d="M12.75,7.07454545 L17,7.07454545 L17,5.98363636 L12.75,5.98363636 C12.1635,5.98363636 11.6875,5.49490909 11.6875,4.89272727 L11.6875,0.529090909 L10.625,0.529090909 L10.625,4.89272727 C10.625,6.09763636 11.5764687,7.07454545 12.75,7.07454545 L12.75,7.07454545 Z" id="exit-full-screen-mode-4"></path>
+                <path d="M6.375,4.89272727 L6.375,0.529090909 L5.3125,0.529090909 L5.3125,4.89272727 C5.3125,5.49490909 4.8365,5.98363636 4.25,5.98363636 L-8.8817842e-16,5.98363636 L-8.8817842e-16,7.07454545 L4.25,7.07454545 C5.42353125,7.07454545 6.375,6.09763636 6.375,4.89272727 L6.375,4.89272727 Z" id="exit-full-screen-mode-3"></path>
+                <path d="M5.3125,13.62 L5.3125,17.9836364 L6.375,17.9836364 L6.375,13.62 C6.375,12.4150909 5.42353125,11.4381818 4.25,11.4381818 L0,11.4381818 L0,12.5290909 L4.25,12.5290909 C4.8365,12.5290909 5.3125,13.0178182 5.3125,13.62 L5.3125,13.62 Z" id="exit-full-screen-mode-2"></path>
+                <path d="M11.6875,13.62 C11.6875,13.0178182 12.1635,12.5290909 12.75,12.5290909 L17,12.5290909 L17,11.4381818 L12.75,11.4381818 C11.5764687,11.4381818 10.625,12.4150909 10.625,13.62 L10.625,17.9836364 L11.6875,17.9836364 L11.6875,13.62 L11.6875,13.62 Z" id="exit-full-screen-mode-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

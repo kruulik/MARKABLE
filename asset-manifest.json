@@ -1,6 +1,16 @@
 {
-  "main.css": "static/css/main.65027555.css",
-  "main.css.map": "static/css/main.65027555.css.map",
-  "main.js": "static/js/main.1fc6e5d0.js",
-  "main.js.map": "static/js/main.1fc6e5d0.js.map"
+  "main.css": "static/css/main.ee936874.css",
+  "main.css.map": "static/css/main.ee936874.css.map",
+  "main.js": "static/js/main.56e3ea4b.js",
+  "main.js.map": "static/js/main.56e3ea4b.js.map",
+  "static/media/big-play.svg": "static/media/big-play.70be6cb1.svg",
+  "static/media/controller-pause-button.svg": "static/media/controller-pause-button.c3424a8a.svg",
+  "static/media/controller-play-button.svg": "static/media/controller-play-button.af85a53c.svg",
+  "static/media/dark-cross.svg": "static/media/dark-cross.86953739.svg",
+  "static/media/icon-exit-full-screen.svg": "static/media/icon-exit-full-screen.49cebb5e.svg",
+  "static/media/light-cross.svg": "static/media/light-cross.a03757db.svg",
+  "static/media/save-clicked.svg": "static/media/save-clicked.98343c01.svg",
+  "static/media/save-hover.svg": "static/media/save-hover.eadef0bb.svg",
+  "static/media/save-idol.svg": "static/media/save-idol.48d92de3.svg",
+  "static/media/volume-button.svg": "static/media/volume-button.7bf56d58.svg"
 }

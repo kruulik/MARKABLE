@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>controller-pause-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="video-recognition-challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.8">
+        <g id="video-recognition-paused" transform="translate(-39.000000, -455.000000)" fill="#FFFFFF">
+            <g id="video-controller" transform="translate(19.000000, 438.000000)">
+                <path d="M29.8,17 C29.0272,17 28.4,17.5652112 28.4,18.2616321 L28.4,33.4012176 C28.4,34.0976385 29.0272,34.6628497 29.8,34.6628497 L32.6,34.6628497 C33.3728,34.6628497 34,34.0976385 34,33.4012176 L34,18.2616321 C34,17.5652112 33.3728,17 32.6,17 L29.8,17 Z M21.4,17 C20.6272,17 20,17.5652112 20,18.2616321 L20,33.4012176 C20,34.0976385 20.6272,34.6628497 21.4,34.6628497 L24.2,34.6628497 C24.9728,34.6628497 25.6,34.0976385 25.6,33.4012176 L25.6,18.2616321 C25.6,17.5652112 24.9728,17 24.2,17 L21.4,17 Z" id="controller-pause-button"></path>
+            </g>
+        </g>
+    </g>
+</svg>

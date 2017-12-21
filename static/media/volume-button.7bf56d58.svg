@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="18px" viewBox="0 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>volume-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="video-recognition-challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="video-recognition-paused" transform="translate(-78.000000, -455.000000)" fill="#FFFFFF">
+            <g id="video-controller" transform="translate(19.000000, 438.000000)">
+                <g id="volume" transform="translate(59.000000, 17.000000)">
+                    <path d="M14.1823983,3.79821055 L14.1823983,5.28741289 C15.885779,5.63216323 17.1681664,7.13402378 17.1681664,8.93521401 C17.1681664,10.7364042 15.885779,12.2382648 14.1823983,12.5830151 L14.1823983,14.0722175 C16.7113439,13.7081075 18.6610504,11.5584439 18.6610504,8.93521401 C18.6610504,6.3119841 16.7113439,4.16232053 14.1823983,3.79821055 L14.1823983,3.79821055 Z M0,5.95680934 L0,11.9136187 C0,12.7356584 0.668812047,13.402821 1.49288403,13.402821 L3.73221008,13.402821 L3.73221008,4.467607 L1.49288403,4.467607 C0.668812047,4.467607 0,5.13476965 0,5.95680934 L0,5.95680934 Z M10.4501882,0 L5.22509412,3.47505365 L5.22509412,14.3953744 L10.4501882,17.870428 C11.2742602,17.870428 11.9430723,17.2032654 11.9430723,16.3812257 L11.9430723,1.48920233 C11.9430723,0.667162646 11.2742602,0 10.4501882,0 L10.4501882,0 Z" id="volume-button"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
