@@ -18,7 +18,6 @@ class Star extends Component {
 
 
   handleClick = (e) => {
-    
     e.preventDefault();
     e.stopPropagation();
     const { selected } = this.state;
@@ -26,7 +25,6 @@ class Star extends Component {
       selected: !this.state.selected,
       source: [this.state.selected ? hover : clicked]
     });
-    // debugger
     this.props.onSelect(!selected);
   }
 
@@ -40,7 +38,6 @@ class Star extends Component {
 
   mouseOut = () => {
     if (!this.state.selected) {
-
     this.setState({
       source: idle
     })

@@ -1,6 +1,7 @@
 export const SAVE_ITEM = 'SAVE_ITEM';
 export const UNSAVE_ITEM = 'UNSAVE_ITEM';
 export const VIEW_DETAILS = 'VIEW_DETAILS';
+export const BEGIN_CHECKOUT = 'BEGIN_CHECKOUT';
 
 export const saveItem = (reference) => {
   return ( {
@@ -21,4 +22,11 @@ export const viewDetails = (reference) => {
     type: VIEW_DETAILS,
     reference
   })
-}
+};
+
+export const beginCheckout = (reference) => {
+  return ({
+    type: BEGIN_CHECKOUT,
+    reference
+  })
+};

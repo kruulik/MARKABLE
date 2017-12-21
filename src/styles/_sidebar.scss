@@ -10,7 +10,7 @@
   border: 1px solid $lightgray;
   border-radius: 2px 0 0 2px;
   box-shadow: -4px 0 7px rgba(0, 0, 0, 0.2);
-  transition-delay: 500ms;  
+  transition-delay: 500ms;
   transition: 300ms;
   &.open-false {
     visibility: hidden;
@@ -22,5 +22,79 @@
     // right: 0px;
     left: calc(100% - 270px);
     visibility: visible;
+  }
+
+
+  .buttons {
+    display: flex;
+    flex-shrink: 0;
+    z-index: 110;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid $lightgray;
+    width: 100%;
+  }
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .content {
+    z-index: 101;
+    padding: 16px 16px 0 16px;
+    height: 100%;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    .text {
+      font-size: 12px;
+    }
+    img {
+      margin: 2px 0 0 8px;
+      align-self: flex-start;
+    }
+  }
+
+  .images {
+    margin-bottom: 16px;
+    height: 120px;
+    img {
+      float: left;
+      max-height: 100%;
+      object-fit: contain;
+      border: 1px solid $lightgray;
+    }
+    .large {
+      margin-right: 4px;
+      width: 178px;
+      height: 120px;
+    }
+    .small {
+      margin-bottom: 4px;
+      width: 50px;
+      height: 25%;
+    }
+  }
+
+  .scroll {
+    overflow-y: scroll;
+  }
+  .price {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  .description-wrapper {
+    font-size: 12px;
+  }
+  h4 {
+    margin: 8px 0;
+    text-transform: uppercase; 
   }
 }

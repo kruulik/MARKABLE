@@ -5,6 +5,7 @@ import Slider from './Overlay/Slider';
 import GridItem from './Overlay/GridItem';
 import Sidebar from './Sidebar/Sidebar';
 import Star from './UI/Star';
+import Button from './UI/Button';
 
 export {
   VideoPlayer,
@@ -13,5 +14,6 @@ export {
   Slider,
   GridItem,
   Sidebar,
-  Star
+  Star,
+  Button
 }

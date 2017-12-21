@@ -107,7 +107,7 @@ class GridItem extends Component {
 
   render() {
     const { reference, image, title, price, company, classStyles } = this.props;
-    const {show, isActive} = this.state;
+    const {show, isActive, selected} = this.state;
     return (
       <Thumb in={show} >
         <div

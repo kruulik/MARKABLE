@@ -1,5 +1,22 @@
+@import 'constants';
+
 .save-icon {
   position: absolute;
   top: 0;
-  left: 130px; 
+  left: 130px;
+}
+
+.button {
+  height: 36px;
+  width: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.primary {
+    background-color: $offwhite;
+  }
 }

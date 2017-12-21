@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import play from 'assets/icon-assets/video/controller-play-button.svg';
+import pause from 'assets/icon-assets/video/controller-pause-button.svg';
+
 import { DefaultPlayer as Video } from 'react-html5video';
 
 class VideoPlayer extends Component {
@@ -14,8 +17,11 @@ class VideoPlayer extends Component {
     })
   }
 
-  togglePlay = () => {
-    // handled by parent
+  togglePlay = (e) => {
+    // e.stopPropagation();
+    const { video } = this.state;
+    const method = video.paused ? 'play' : 'pause';
+    video[method]();
   }
 
   handleProgress = () => {
@@ -60,6 +66,7 @@ class VideoPlayer extends Component {
           <div className="progress">
             <div className="fill" style={{width: this.state.progress}}></div>
           </div>
+          <img src={play} onClick={() => this.togglePlay()}/>
         </div>
 
       </div>
