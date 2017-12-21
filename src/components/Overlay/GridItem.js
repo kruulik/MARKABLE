@@ -57,8 +57,12 @@ class GridItem extends Component {
     super(props);
     this.state= ({
       show: false,
-      mouse: false
+      mouse: false,
+      selected: false,
+      isActive: true
     })
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount(){
@@ -77,6 +81,12 @@ class GridItem extends Component {
     this.setState({mouse: false})
   }
 
+  handleClick(e) {
+    const {reference} = this.props;
+    this.props.selectThumb(this);
+    this.props.viewDetails(reference);
+  }
+
   handleSelect = (selected) => {
     if (selected) {
       this.props.saveItem(this.props.reference)
@@ -85,13 +95,29 @@ class GridItem extends Component {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.activeItem === this || nextProps.activeItem === null) {
+      this.setState({
+        isActive: true
+      })
+    } else {
+      this.setState({
+        isActive: false
+      })
+    }
+  }
+
   render() {
     const { reference, image, title, price, company, classStyles } = this.props;
-    const {show} = this.state;
+    const {show, isActive} = this.state;
     return (
       <Thumb in={show} >
         <div
-          className={`gridItem ${classStyles}`} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}>
+          className={`gridItem ${classStyles} is-active-${isActive}`}
+          onMouseOver={this.mouseOver}
+          onMouseOut={this.mouseOut}
+          onClick={this.handleClick}
+        >
           <Star mouse={this.state.mouse} onSelect={(e) => this.handleSelect(e)}/>
           <div className="thumbContainer">
             <img className="productThumb" src={image} />
@@ -106,13 +132,14 @@ class GridItem extends Component {
         </div>
       </Thumb>
         )
-
   }
 }
 
 const mapStateToProps = (state) => {
+  const {activeItem} = state.ui
   return {
-    state
+    state,
+    activeItem
   };
 };
 

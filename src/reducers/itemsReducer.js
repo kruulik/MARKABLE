@@ -1,6 +1,7 @@
 import {
   SAVE_ITEM,
-  UNSAVE_ITEM
+  UNSAVE_ITEM,
+  VIEW_DETAILS
 } from '../actions/itemActions';
 
 import merge from 'lodash/merge';
@@ -23,6 +24,8 @@ const itemsReducer = (state = initialState, action) => {
       let idx = prev.findIndex(i => i === action.reference);
       prev.splice(idx, 1);
       return merge({}, state, {saved: prev});
+    case VIEW_DETAILS:
+      debugger
     default:
       return state;
   }

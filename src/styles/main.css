@@ -97,6 +97,10 @@ body {
     border-bottom: 5px solid #DC6094; }
   .gridItem:hover {
     transform: scale(1.05); }
+  .gridItem.is-active-false {
+    opacity: 0.1; }
+  .gridItem.is-active-false:hover {
+    opacity: 0.7; }
   .gridItem .info {
     padding: 8px;
     display: flex;

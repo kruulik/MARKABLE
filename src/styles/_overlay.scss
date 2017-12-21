@@ -120,6 +120,14 @@ body {
     transform: scale(1.05);
   }
 
+  &.is-active-false {
+    opacity: 0.1;
+  }
+
+  &.is-active-false:hover {
+    opacity: 0.7;
+  }
+
   .info {
     padding: 8px;
     display: flex;

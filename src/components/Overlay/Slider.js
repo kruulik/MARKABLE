@@ -13,13 +13,21 @@ class Slider extends Component {
   constructor(props){
     super(props);
     this.state= ({
-      items: null
+      items: null,
+      isActive: false
     })
+    // this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e){
+    debugger
   }
 
   renderItems = () => {
     const { itemIDs, borderColor } = this.props;
+    const { isActive } = this.state;
     const items = matches["productDetails"];
+
 
     return itemIDs.map(id => (
         <GridItem
@@ -33,6 +41,7 @@ class Slider extends Component {
         />
     ))
   }
+
   componentDidMount(){
     this.renderItems();
   }
@@ -50,6 +59,8 @@ class Slider extends Component {
 }
 
 const mapStateToProps = (state) => {
+  // debugger
+  const active = state.ui
   return {
     state
   };
