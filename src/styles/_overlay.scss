@@ -98,10 +98,10 @@ body {
   height: 230px;
   width: 150px;
   margin-right: 16px;
-  margin-bottom: 20px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  transition: 200ms ease-in-out;
 
   &.gold {
     border-bottom: 5px solid $match_gold;
@@ -114,6 +114,10 @@ body {
   }
   &.magenta {
     border-bottom: 5px solid $match_magenta;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 
   .info {
@@ -171,7 +175,9 @@ body {
   overflow-x: scroll;
 
   .sliderContent {
+    padding: 10px 0;
     display: flex;
     overflow-x: visible;
+    overflow-y: hidden;
   }
 }

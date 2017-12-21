@@ -83,10 +83,10 @@ body {
   height: 230px;
   width: 150px;
   margin-right: 16px;
-  margin-bottom: 20px;
   flex-shrink: 0;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  transition: 200ms ease-in-out; }
   .gridItem.gold {
     border-bottom: 5px solid #D3B380; }
   .gridItem.khaki {
@@ -95,6 +95,8 @@ body {
     border-bottom: 5px solid #C2C2C2; }
   .gridItem.magenta {
     border-bottom: 5px solid #DC6094; }
+  .gridItem:hover {
+    transform: scale(1.05); }
   .gridItem .info {
     padding: 8px;
     display: flex;
@@ -136,5 +138,7 @@ body {
   margin: 0 -5%;
   overflow-x: scroll; }
   .slider .sliderContent {
+    padding: 10px 0;
     display: flex;
-    overflow-x: visible; }
+    overflow-x: visible;
+    overflow-y: hidden; }

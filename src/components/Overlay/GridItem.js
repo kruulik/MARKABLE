@@ -29,7 +29,6 @@ const transitionStyles = {
 }
 
 const Thumb = ({ in: inProp, children }) => {
-  // debugger
   return (
     <Transition in={inProp} timeout={duration}>
       {(state) => {
@@ -59,7 +58,6 @@ class GridItem extends Component {
   }
 
   componentDidMount(){
-    // debugger
     this.setState({show: true})
   }
 
@@ -72,7 +70,6 @@ class GridItem extends Component {
     const {show} = this.state;
     return (
       <Thumb in={show}>
-
         <div className={`gridItem ${classStyles}`} >
           <div className="thumbContainer">
             <img className="productThumb" src={image}/>
@@ -85,7 +82,6 @@ class GridItem extends Component {
             </div>
           </div>
         </div>
-
       </Thumb>
         )
 

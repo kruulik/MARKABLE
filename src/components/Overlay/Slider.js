@@ -18,13 +18,11 @@ class Slider extends Component {
     })
   }
 
-
   renderItems = () => {
     const { itemIDs, borderColor } = this.props;
     const items = matches["productDetails"];
 
     return itemIDs.map(id => (
-
         <GridItem
           key={id}
           image={items[id].image}
@@ -32,8 +30,7 @@ class Slider extends Component {
           price={items[id].price}
           company={items[id].company}
           classStyles={borderColor}
-        /> 
-
+        />
     ))
   }
   componentDidMount(){
@@ -44,11 +41,8 @@ class Slider extends Component {
     return (
       <div className="slider" >
         <div className='sliderContent'>
-
           {this.renderItems()}
-
         </div>
-
       </div>
     )
 
