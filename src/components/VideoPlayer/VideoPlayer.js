@@ -5,6 +5,7 @@ import play from 'assets/icon-assets/video/controller-play-button.svg';
 import pause from 'assets/icon-assets/video/controller-pause-button.svg';
 import fullScreen from 'assets/icon-assets/video/icon-exit-full-screen.svg';
 import sound from 'assets/icon-assets/video/volume-button.svg';
+import bigPlay from 'assets/icon-assets/big-play.svg';
 
 import { DefaultPlayer as Video } from 'react-html5video';
 
@@ -25,11 +26,11 @@ class VideoPlayer extends Component {
     const { video } = this.state;
     // const method = video.paused ? 'play' : 'pause';
     // video[method]();
-    if (video.paused) {
-      video.play();
-    } else {
+    if (!video.paused) {
       video.pause();
       this.props.toggleModal();
+    } else {
+      video.play();
     }
   }
 
@@ -64,12 +65,15 @@ class VideoPlayer extends Component {
     const {video} = this.state;
     return (
       <div className="player">
+
         <video
           className="viewer"
           ref="video"
           src={this.state.source}
-          onClick={this.props.toggleModal}
+          onClick={() => this.togglePlay()}
         />
+
+        <img className="bigPlay" src={video && video.paused ? bigPlay : null} onClick={() => this.togglePlay()}/>
 
         <div className="controls">
           <div className="progress">
@@ -84,7 +88,7 @@ class VideoPlayer extends Component {
                 <div className="fill" style={{width: this.state.volume}}></div>
               </div>
             </div>
-            
+
             <img className="fullScreen" src={fullScreen} onClick={() => this.setState({fullScreen: !this.state.fullScreen})} />
 
           </div>

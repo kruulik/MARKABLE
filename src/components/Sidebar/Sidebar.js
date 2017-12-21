@@ -65,7 +65,7 @@ class Sidebar extends Component {
 
           <div className="scroll">
             <div className="description-wrapper">
-              <h3 className="price">{details[itemID].price}</h3>
+              <h3 className="price">${details[itemID].price}</h3>
               <h4>Product Features</h4>
               <p>{details[itemID].details}</p>
               <h4>Description</h4>
@@ -74,8 +74,8 @@ class Sidebar extends Component {
           </div>
         </div>
         <div className="buttons">
-          <Button handleClick={() => this.props.saveItem(itemID)} >Save For Later</Button>
-          <Button handleClick={(e) => this.handleSelect(e)} classes={"primary"} >Buy</Button>
+          <Button handleClick={() => console.log(itemID)} >Save For Later</Button>
+          <Button handleClick={() => console.log(itemID)} classes={"primary"} >Buy</Button>
         </div>
       </div>
       )

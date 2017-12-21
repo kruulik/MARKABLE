@@ -4,7 +4,7 @@
   position: absolute;
   top: 10px;
   left: 120px;
-  &:visited {
+  &:active {
     transform: scale(2);
     animation-duration: 500ms;
   }
@@ -23,4 +23,29 @@
   &.primary {
     background-color: $offwhite;
   }
+}
+
+.saved-stack {
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  z-index: 200;
+  height: 32px;
+  width: 32px;
+
+  .badge {
+    position: absolute;
+    background: white;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.2);
+    opacity: 1;
+    transition: opacity delay 500ms;
+  }
+
+
 }

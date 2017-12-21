@@ -6,6 +6,8 @@ import GridItem from './Overlay/GridItem';
 import Sidebar from './Sidebar/Sidebar';
 import Star from './UI/Star';
 import Button from './UI/Button';
+import SavedBadge from './UI/SavedBadge';
+
 
 export {
   VideoPlayer,
@@ -15,5 +17,6 @@ export {
   GridItem,
   Sidebar,
   Star,
-  Button
+  Button,
+  SavedBadge
 }

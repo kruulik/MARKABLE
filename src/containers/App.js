@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { VideoPlayer } from 'components';
 import { Overlay } from 'components';
 import { Sidebar } from 'components';
+import { SavedBadge } from 'components';
 
 import { bindActionCreators } from 'redux';
 import * as uiActions from 'actions/uiActions';
@@ -20,6 +21,7 @@ class App extends Component {
 
     return (
       <div id="mainContainer">
+        <SavedBadge />
         <Sidebar />
         { modal ?
           <Overlay classList={"show"} toggleModal={this.toggleModal}/>
